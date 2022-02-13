@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>moody healthy hack</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="script.js" async defer></script>
+  </head>
+  <body onload="init()">
+    <header>
+      <nav class="nav" id="na">
+        <div class="logo">
+          <h1>moody healthy hack.</h1>
+        </div>
+        <ul class="nav-links">
+          <a href="#na"><li>Home</li></a>
+          <a href="#act"><li>Activites</li></a>
+          <a href="#blog"><li>Blogs</li></a>
+          <a href="#lis"><li>Listen</li></a>
+          <a href="#stay"><li>Community Support</li></a>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+      <div class="banner">
+        <div class="left-side">
+          <img src="assets/piclogo.png" style="width: 80%" />
+        </div>
+        <div class="right-side">
+          <h2>
+            <span id="create"> A place to feel better, wherever you come.</span>
+          </h2>
+        </div>
+      </div>
+    </header>
+    <div class="products-section">
+      <h1 id="instructionsSection">
+        Let's first check-up your Mental Health :)
+      </h1>
+   
+      </section>
+      <div class="product-grid">
+        <section>
+          <div class="container">
+
+            <div id="status" style="color: whitesmoke"></div>
+            <div id="QSection">
+            <h3 id="remark"></h3>  
+              <div class="container">
+               
+                <div class="question ml-sm-5 pl-sm-5 pt-2">
+                  <div class="py-2 h5">
+                    <div class="form-group row">
+                      <label
+                        for="email_address"
+                        class="col-md-4 col-form-label text-md-right"
+                        >E-Mail:</label
+                      >
+                      <div class="col-md-6">
+                        <input
+                          type="email"
+                          id="email_address"
+                          class="form-control"
+                          name="email-address"
+                          required
+                          autofocus
+                        />
+                      </div>
+                      <div class="ml-auto mr-sm-5">
+                        <button class="btn btn-success" onclick="readEmail()">
+                          Next
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="navbuttons" class="d-flex align-items-center pt-3">
+              <div id="prev">
+                <button class="btn btn-primary" onclick="previous()">
+                  Previous
+                </button>
+              </div>
+              <div id="next" class="ml-auto mr-sm-5">
+                <button class="btn btn-success" onclick="next()">Next</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <section>
+      <div class="products-section" id="act">
+        <h1>Self-Care Activites</h1>
+        <p>
+          Here are some activites on your daily bases as you can’t control
+          everything. Sometimes you just need to relax and have faith that
+          things will work out. Let go a little and just let life happen!
+        </p>
+        <div class="product-grid-two">
+          <div class="products-item">
+            <img src="assets/walk.jpg" />
+            <br />
+            <h2>WALKING</h2>
+            <span>A walk round the block can help take you away from a current stressor and reduce your emotional reactivity. A slower walk may be more meditative and soothing. Quicken your pace and you can raise your heartrate and stimulate the feelgood chemicals in your brain. This can help boost your energy levels, as well as reducing feelings of stress and anxiety.</span>
+          </div>
+          <div class="products-item">
+            <img src="assets/sleep.jpg" />
+            <br />
+            <h2>SLEEP</h2>
+            <span>A common cause of sleeping problems is poor sleep hygiene. Stepping up sleep hygiene by cultivating habits and a bedroom setting that are conducive to sleep can go a long way in reducing sleep disruptions. One way to evaluate this assertion is to examine the extent to which interventions that improve sleep also improve mental health. Have a set bedtime and maintaining a steady sleep schedule. Dimming lights and putting away electronic devices for an hour or more before bed.</span>
+          </div>
+          <div class="products-item">
+            <img src="assets/breath.jpg" />
+            <br />
+            <h2>BREATHING EXERCISES</h2>
+            <span>When we approach breathing exercises as a genuine way to improve mental health, it becomes more than just a physical exercise. Proper breathing techniques can massively increase the amount of oxygen in your body. Proper breathing techniques can also lower blood pressure, and this can contribute to lower levels of stress.</span>
+          </div>
+          <div class="products-item">
+            <img src="assets/med.jpg" /> 
+            <br />
+            <h2>MINDFULNESS MEDITATION</h2>
+            <span>Meditation is to encourage a feeling of relaxation and inner peace, minimize tension and feel mental relief that can turn out to be beneficial for your mental health. It Strengthens Your Brain, calm the mind down, prevent strong emotions from reappearing, promoting better control of willpower, which is both helpful in controlling emotions and fighting desires. It lowered the number of negative thoughts, along with the pain felt in the body.</span>
+          </div>
+          <div class="products-item">
+            <img src="assets/creative.jpg" />
+            <br />
+            <h2>CREATIVE THINGS</h2>
+            <span>It can include using music, dance, drawing,gardening and other art like following your hobbies forms to help express emotions and promote healing. Creative hobbies help you to use your time for something positive.Creating something and learning new skills can also boost your self-esteem, as well as give your brain a healthy workout – boosting your attention span, memory and problem-solving skills.
+
+            </span>
+          </div>
+          <div class="products-item">
+            <img src="assets/therapy.jpg" />
+            <br />
+            <h2>THERAPY</h2>
+            <span>There are many different types of therapy, including those that are most effective with families or groups of people. While talking to friends or family regularly can really help with your mental health, attending therapy with a licensed professional can provide even more support. It helps family members communicate, handle conflicts and solve problems better. Forms of family therapy often are used for treating eating disorders and bipolar disorder</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="blogs" id="blog">
+        <h1>Read Blogs</h1>
+        <div class="grid-flex">
+          <div
+            class="column column-image"
+            style="
+              background-image: url('assets/connect.1&auto=format&fit=crop&w=1350&q=80');
+              align-content: flex-end;
+            "
+          ></div>
+          <div class="column column-right">
+            <div class="align-item">
+              <h2>
+                How To Keep Your Mental Health in Check When You Work From Home
+              </h2>
+              <br />
+              <p>
+                &ldquo; Take steps to improve your mental health when you work
+                from home and you’ll shrug off the anxiety, depression, and
+                loneliness many remote workers face…
+              </p>
+              <br />
+              <button class="btn-two"><a href="https://weworkremotely.com/how-to-keep-your-mental-health-in-check-when-you-work-from-home"> Read more</a></button>
+              <br />
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="grid-flex">
+          <div
+            class="column column-image"
+            style="background-image: url('assets/disconnect.jpg')"
+          >
+            &nbsp;
+          </div>
+          <div class="column column-left">
+            <div class="align-item">
+              <h2>Do Not Disturb</h2>
+              <br />
+              <p>
+                &ldquo; Ever found yourself eagerly awaiting a message? Your
+                phone makes a *ding* that pierces your eardrums with more
+                discomfort than a Clean Bandit track. Your heart races. You
+                awkwardly sprint…
+              </p>
+              <br />
+              <button class="btn-two"><a href="https://joebell.co.uk/blog/do-not-disturb"> Read more</a></button>
+              <br />
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="products-section" id="lis">
+        <h1>Listen To</h1>
+        <p>
+          Here are some Podcast episodes, Talks and Music about mental health awareness and to uplift your mood.
+        </p>
+        <div class="product-grid-two">
+          <div class="products-item">
+            <img src="assets/podcasts.jpg" />
+            <br />
+            <h2>PODCASTS</h2>
+            <span>A weekly podcast full of practical advice to improve your mental health — because looking after your wellbeing takes work, but it doesn't have to be tough.<br />
+              <button class="btn-two"><a href="https://open.spotify.com/show/2kH3ec1ljTia7VmwYsm8Xt"> Listen here</a></button>
+              <br /></span>
+          </div>
+          <div class="products-item">
+            <img src="assets/talk.jpg" />
+            <br />
+            <h2>TALKS</h2>
+            <span>Getting Therapy to Those who Need it Most - Shawn Kernes - AnxietyTech 2018. Listening to talks make you relatable with situtions and then you realise these things are normal.<br />
+              <button class="btn-two"><a href="https://www.youtube.com/watch?v=O4AWH5o1NVk"> Listen here</a></button>
+              <br /></span>
+          </div>
+          <div class="products-item">
+            <img src="assets/just.jpeg" />
+            <br />
+            <h2>MUSIC</h2>
+            <span>Playlist of songs which makes your mood happys. Music has shown to improve other mental conditions, such as anxiety and depression....<br />
+              <button class="btn-two"><a href="https://open.spotify.com/playlist/3bfhzSCoLBp63P37iUYjd3"> Listen here</a></button>
+              <br /></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="containerr mt-sm-5 my-1" id="stay">
+        <div class="left-side-two">
+          <div class="form-1-container section-container">
+            <div class="container">
+              <div class="row">
+                <div class="col form-1 section-description wow fadeIn">
+                  <h2>Stay tuned :)</h2>
+                  <p>
+                    You can contact us anytime from anywhere in the world and we
+                    will try to get you all help you need (You are not alone).
+                  </p>
+                  <div class="divider-1 wow fadeInUp"><span></span></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-10 offset-md-1 form-1-box wow fadeInUp">
+                  <fieldset class="form-group border p-3">
+                    <div class="form-group">
+                      <label for="name">Name:</label>
+                      <input
+                        type="text"
+                        class="form-control name"
+                        id="CommentName"
+                        placeholder="Name"
+                        name="name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input
+                        type="email"
+                        class="form-control email"
+                        id="CommentEmail"
+                        placeholder="Email"
+                        name="email"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="feel">How are you feeling:</label>
+                      <input
+                          type="feel"
+                          class="form-control feel"
+                          id="CommentFeel"
+                          placeholder="example: sad/happy"
+                          name="feel"
+                      />
+                    </br>
+                    <!-- 
+                      <label class=" feels"
+                        >Happy<input
+                          type="radio"
+                          class="form-control feel"
+                          id="CommentFeel"
+                          name="feel"
+                      /></label>
+                      <label class=" feels"
+                        >Sad<input
+                          type="radio"
+                          class="form-control feel"
+                          id="CommentFeel"
+                          name="feel"
+                      /></label>
+                      <label class=" feels"
+                        >Anger<input
+                          type="radio"
+                          class="form-control feel"
+                          id="CommentFeel"
+                          name="feel"
+                      /></label>
+                      <label class=" feels"
+                        >Confused<input
+                          type="radio"
+                          class="form-control feel"
+                          id="CommentFeel"
+                          name="feel"
+                      /></label>
+                      <label class=" feels"
+                        >Fear<input
+                          type="radio"
+                          class="form-control feel"
+                          id="CommentFeel"
+                          name="feel"
+                      /></label>
+                      <label class=" feels"
+                        >Guilt<input
+                          type="radio"
+                          class="form-control feel"
+                          id="CommentFeel"
+                          name="feel"
+                      /></label>
+                      <label class=" feels"
+                        >Cool<input
+                          type="radio"
+                          class="form-control feel"
+                          id="CommentFeel"
+                          name="feel"
+                      /></label>
+                      <label class=" feels"
+                        >emotional<input
+                          type="radio"
+                          class="form-control feel"
+                          id="CommentFeel"
+                          name="feel"
+                      /></label> -->
+                    </div>
+                    <div class="form-group">
+                      <label for="comment">Message:</label>
+                      <textarea
+                        class="form-control"
+                        rows="4"
+                        id="Comment"
+                        placeholder=""
+                        name="comment"
+                      ></textarea>
+                    </div>
+                  </fieldset>
+                  <div class="form-group row text-right">
+                    <div class="col">
+                      <div class="ml-auto mr-sm-5">
+                        <button class="btn btn-success" onclick="sendComment()">
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="CommentStatus" style="color: white"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-side-two">
+          <img src="assets/community.webp" style="width: 80%" />
+        </div>
+    </section>    
+  </body>
+</html>
